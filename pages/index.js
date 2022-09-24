@@ -1,5 +1,5 @@
 import { server } from "../config";
-import Head from "next/head"; // used for cutoms titles, meta, etc
+
 import ArticleList from "../components/ArticleList";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
@@ -7,11 +7,6 @@ import styles from "../styles/Layout.module.css";
 export default function Home({ articles }) {
   return (
     <div>
-      <Head>
-        <title>WebDev Next</title>
-        <meta name="keywords" content="web development, programming, next" />
-      </Head>
-
       <ArticleList articles={articles} />
     </div>
   );
